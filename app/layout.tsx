@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Jersey_10 } from "next/font/google";
 import "./globals.css";
+import { Providers } from "./providers";
 
 const jersey = Jersey_10({
   subsets: ["latin"],
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-black text-white antialiased ${jersey.className}`}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

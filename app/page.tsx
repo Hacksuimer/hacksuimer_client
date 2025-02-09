@@ -2,6 +2,7 @@
 
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";
+
 // import '@suiet/wallet-kit/style.css';
 // import { WalletProvider } from "@suiet/wallet-kit";
 
