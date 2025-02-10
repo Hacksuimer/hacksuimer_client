@@ -22,7 +22,7 @@ export default function Hero() {
           Create Event
         </button>
         <button 
-          onClick={() => window.location.href = "/events/create"} 
+          onClick={() => window.location.href = "/"} 
           className="text-black bg-white px-4 py-3 rounded-2xl shadow-md hover:bg-gray-200 md:px-20"
         >
           Mint NFT

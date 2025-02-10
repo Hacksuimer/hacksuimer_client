@@ -9,17 +9,7 @@ export default function EventForm() {
   const [description, setDescription] = useState(""); // State for event description
   const [eventType, setEventType] = useState(""); // State for event type
 
-  // Handle image upload
-  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0]; // Optional chaining to handle null
-    if (file) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setImage(reader.result as string); // Cast to string
-      };
-      reader.readAsDataURL(file);
-    }
-  };
+
 
   // Handle form submission
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -38,29 +28,19 @@ export default function EventForm() {
     <section className="mx-auto w-full max-w-[1000px] pt-4 md:pt-12 flex flex-col gap-4 px-4">
         <h2 className="text-xl font-bold">Create Event</h2>
       <form onSubmit={handleSubmit} className="space-y-6">
-        {/* Image Upload Section */}
-        <div className="border-2 border-dashed border-gray-400 rounded-lg p-6 text-center">
-          <input
-            type="file"
-            id="image-upload"
-            accept="image/*"
-            className="hidden"
-            onChange={handleImageUpload}
-          />
-          <label htmlFor="image-upload" className="cursor-pointer">
-            {image ? (
-              <img
-                src={image}
-                alt="Event Preview"
-                className="w-full h-48 object-cover rounded-lg"
-              />
-            ) : (
-              <div className="space-y-2">
-                <p className="text-gray-600">Drag & drop an image here</p>
-                <p className="text-gray-400 text-sm">or click to upload</p>
-              </div>
-            )}
+        <div >
+          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+            Image URl
           </label>
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="mt-1 block w-full p-2 border-2 border-dashed border-gray-300 rounded-md bg-black text-white"
+            placeholder="Enter Image URL"
+            required
+          />
         </div>
 
          {/* Event Type Dropdown */}
