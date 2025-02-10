@@ -29,14 +29,14 @@ export default function EventForm() {
         <h2 className="text-xl font-bold">Create Event</h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div >
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-            Image URl
+          <label htmlFor="image" className="block text-sm font-medium text-gray-700">
+            Image URL
           </label>
           <input
             type="text"
-            id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            id="image"
+            value={image || ''}
+            onChange={(e) => setImage(e.target.value)}
             className="mt-1 block w-full p-2 border-2 border-dashed border-gray-300 rounded-md bg-black text-white"
             placeholder="Enter Image URL"
             required
