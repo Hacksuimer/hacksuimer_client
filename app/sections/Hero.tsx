@@ -1,7 +1,8 @@
 "use client";
 
 // import { useWallet } from '@suiet/wallet-kit';
-import { ConnectButton } from "@suiet/wallet-kit";
+// import { ConnectButton } from "@suiet/wallet-kit";
+import { ConnectButton } from "@mysten/dapp-kit";
 import Image from 'next/image';
 
 import Event from "../assets/image/event.jpg";
