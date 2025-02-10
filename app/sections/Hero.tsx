@@ -2,6 +2,9 @@
 
 // import { useWallet } from '@suiet/wallet-kit';
 import { ConnectButton } from "@suiet/wallet-kit";
+import Image from 'next/image';
+
+import Event from "../assets/image/event.jpg";
 
 export default function Hero() {
   return (
@@ -18,15 +21,24 @@ export default function Hero() {
         >
           Create Event
         </button>
+        <button 
+          onClick={() => window.location.href = "/events/create"} 
+          className="text-black bg-white px-4 py-3 rounded-2xl shadow-md hover:bg-gray-200 md:px-20"
+        >
+          Mint NFT
+        </button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
         <div className="rounded-2xl p-8 border border-white/50 hover:border-[#6fbcf0] transition-all">
           {/* Image with curved top */}
-          <div className="w-full h-40 overflow-hidden rounded-t-2xl mb-6">
-            <img
-              src="/path-to-your-image.jpg" // Replace with your image path
-              className="w-full h-full object-cover"
+          <div className="w-full h-40 overflow-hidden rounded-2xl mb-6">
+            <Image
+              src={ Event } // Updated image path
+              alt="Description of the image"
+              className="w-full h-full object-cover rounded-2xl"
+              width={500} // Set a width for the image
+              height={300} // Set a height for the image
             />
           </div>
           {/* Content */}
@@ -35,16 +47,18 @@ export default function Hero() {
           </h3>
           <p className="text-gray-400">
             Build secure and efficient smart contracts using Move, SUI&apos;s
-        
           </p>
         </div>
 
         <div className="rounded-2xl p-8 border border-white/50 hover:border-[#6fbcf0] transition-all">
           {/* Image with curved top */}
           <div className="w-full h-40 overflow-hidden rounded-t-2xl mb-6">
-            <img
-              src="/path-to-your-image.jpg" // Replace with your image path
+            <Image
+              src={Event} // Updated image path
+              alt="Description of the image"
               className="w-full h-full object-cover"
+              width={500} // Set a width for the image
+              height={300} // Set a height for the image
             />
           </div>
           {/* Content */}
@@ -52,19 +66,19 @@ export default function Hero() {
             NFT & Gaming
           </h3>
           <p className="text-gray-400">
-          Develop dynamic NFT experiences and blockchain games using
-          SUI&apos;s
-       
+            Develop dynamic NFT experiences and blockchain games using SUI&apos;s
           </p>
         </div>
-
 
         <div className="rounded-2xl p-8 border border-white/50 hover:border-[#6fbcf0] transition-all">
           {/* Image with curved top */}
           <div className="w-full h-40 overflow-hidden rounded-t-2xl mb-6">
-            <img
-              src="/path-to-your-image.jpg" // Replace with your image path
+            <Image
+              src={Event} // Updated image path
+              alt="Description of the image"
               className="w-full h-full object-cover"
+              width={500} // Set a width for the image
+              height={300} // Set a height for the image
             />
           </div>
           {/* Content */}
@@ -72,11 +86,9 @@ export default function Hero() {
             SUI MeetUp
           </h3>
           <p className="text-gray-400">
-          Meetup 
-        
+            Meetup
           </p>
         </div> 
-       
       </div>
     </div>
   );

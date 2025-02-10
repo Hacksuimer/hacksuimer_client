@@ -14,6 +14,9 @@ importers:
       '@suiet/wallet-kit':
         specifier: ^0.3.4
         version: 0.3.4(@mysten/sui@1.21.2(typescript@5.7.3))(@types/react@19.0.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)
+      dotconfig:
+        specifier: 0.0.1-security
+        version: 0.0.1-security
       next:
         specifier: 15.1.6
         version: 15.1.6(@babel/core@7.26.8)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -1597,6 +1600,9 @@ packages:
 
   domutils@2.8.0:
     resolution: {integrity: sha512-w96Cjofp72M5IIhpjgobBimYEfoPjx1Vx0BSX9P30WBdZW2WIKU0T1Bd0kz2eNZ9ikjKgHbEyKx8BB6H1L3h3A==}
+
+  dotconfig@0.0.1-security:
+    resolution: {integrity: sha512-FeQrvasr4XifDxlpmJzwQ+bJPV7ENX0AO81CQVKDCaiDUNL/0TZDv7SSPvVBl29Ua9dTSa5t/vKHfWA/a3pO9Q==}
 
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
@@ -4796,6 +4802,8 @@ snapshots:
       dom-serializer: 1.4.1
       domelementtype: 2.3.0
       domhandler: 4.3.1
+
+  dotconfig@0.0.1-security: {}
 
   dunder-proto@1.0.1:
     dependencies:

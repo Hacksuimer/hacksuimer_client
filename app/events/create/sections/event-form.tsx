@@ -128,7 +128,7 @@ export default function EventForm() {
             onChange={(e) => setDescription(e.target.value)}
             className="mt-1 block w-full p-2 border  border-gray-300 rounded-md bg-black text-white"
             placeholder="Enter event description"
-            rows="4"
+            // rows="4"
             required
           />
         </div>

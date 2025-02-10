@@ -11,6 +11,7 @@
   "dependencies": {
     "@mysten/sui": "^1.21.2",
     "@suiet/wallet-kit": "^0.3.4",
+    "dotconfig": "0.0.1-security",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
